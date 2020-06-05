@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="120dp"
+    android:layout_height="170dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="6dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="35dp">
+
+
+        <ImageView
+            android:id="@+id/i_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|center"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/ic_launcher" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/o_view"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:srcCompat="@color/black_transparent" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_play_circle_outline_white_48dp" />
+
+    </FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/t_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="testing"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+</androidx.cardview.widget.CardView>
